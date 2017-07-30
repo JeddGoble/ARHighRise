@@ -39,7 +39,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         sceneView.showsStatistics = false
         
-        let scene = SCNScene(named: "GameScene.scn")!
+        let scene = SCNScene(named: "art.scnassets/GameScene.scn")!
         sceneView.scene = scene
         
         sceneView.isPlaying = true
@@ -70,7 +70,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @objc func handleTap() {
         
         if (!gameIsRunning) {
-            let gameScene = SCNScene(named: "GameScene.scn")!
+            let gameScene = SCNScene(named: "art.scnassets/ship.scn")!
             sceneView.scene = gameScene
             height = 0
             direction = true

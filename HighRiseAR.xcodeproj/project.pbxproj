@@ -18,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		044CA3571F2E082C00A71B8D /* SCNVector3 Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3 Extensions.swift"; sourceTree = "<group>"; };
-		044CA3591F2E083200A71B8D /* GameScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GameScene.scn; sourceTree = "<group>"; };
 		AF4F68EB1F293E5A0047B2CC /* HighRiseAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighRiseAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4F68EE1F293E5A0047B2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4F68F01F293E5A0047B2CC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		AF4F68ED1F293E5A0047B2CC /* HighRiseAR */ = {
 			isa = PBXGroup;
 			children = (
-				044CA3591F2E083200A71B8D /* GameScene.scn */,
 				AF4F68EE1F293E5A0047B2CC /* AppDelegate.swift */,
 				AF4F68F01F293E5A0047B2CC /* art.scnassets */,
 				AF4F68F21F293E5A0047B2CC /* ViewController.swift */,
@@ -283,7 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T85QJN383J;
 				INFOPLIST_FILE = HighRiseAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jedd.HighRiseAR;
@@ -297,7 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = T85QJN383J;
 				INFOPLIST_FILE = HighRiseAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jedd.HighRiseAR;

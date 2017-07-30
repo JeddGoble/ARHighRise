@@ -31,6 +31,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var gameIsRunning = false
     
+    let redMultiplier: CGFloat = 0.15
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,7 +85,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             boxNode.position.z = -1.5
             boxNode.position.y = -0.5
             boxNode.name = "Block\(height)"
-            boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(colorLiteralRed: 0.2 * Float(height), green: 0.1, blue: 0.9, alpha: 0.95)
+            let redAmount = CGFloat(height) * redMultiplier
+            boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: redAmount, green: 0.1, blue: 0.9, alpha: 0.95)
             sceneView.scene.rootNode.addChildNode(boxNode)
             
             gameIsRunning = true
@@ -130,7 +133,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let newBoxNode = SCNNode(geometry: currentBoxNode.geometry)
         newBoxNode.position = SCNVector3Make(currentBoxNode.position.x, currentPosition.y + 0.1, currentBoxNode.position.z)
         newBoxNode.name = "Block\(height+1)"
-        newBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(colorLiteralRed: 0.2 * Float(height), green: 0.1, blue: 0.9, alpha: 0.95)
+        let redAmount = CGFloat(height) * redMultiplier
+        newBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: redAmount, green: 0.1, blue: 0.9, alpha: 0.95)
         
         if height % 2 == 0 {
             newBoxNode.position.x = -0.9
@@ -162,7 +166,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             brokenBoxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(geometry: brokenBoxNode.geometry!, options: nil))
             brokenBoxNode.physicsBody?.isAffectedByGravity = false
             currentBoxNode.physicsBody?.collisionBitMask = 0
-            brokenBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(colorLiteralRed: 0.2 * Float(height), green: 0.1, blue: 0.9, alpha: 0.95)
+            let redAmount = CGFloat(height) * redMultiplier
+            brokenBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: redAmount, green: 0.1, blue: 0.9, alpha: 0.95)
             sceneView.scene.rootNode.addChildNode(brokenBoxNode)
             
             // 4
@@ -180,7 +185,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             brokenBoxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(geometry: brokenBoxNode.geometry!, options: nil))
             brokenBoxNode.physicsBody?.isAffectedByGravity = false
             currentBoxNode.physicsBody?.collisionBitMask = 0
-            brokenBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(colorLiteralRed: 0.2 * Float(height), green: 0.1, blue: 0.9, alpha: 0.95)
+            let redAmount = CGFloat(height) * redMultiplier
+            brokenBoxNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: redAmount, green: 0.1, blue: 0.9, alpha: 0.95)
             sceneView.scene.rootNode.addChildNode(brokenBoxNode)
         }
     }

@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044CA3581F2E082C00A71B8D /* SCNVector3 Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CA3571F2E082C00A71B8D /* SCNVector3 Extensions.swift */; };
 		AF4F68EF1F293E5A0047B2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4F68EE1F293E5A0047B2CC /* AppDelegate.swift */; };
 		AF4F68F11F293E5A0047B2CC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4F68F01F293E5A0047B2CC /* art.scnassets */; };
 		AF4F68F31F293E5A0047B2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4F68F21F293E5A0047B2CC /* ViewController.swift */; };
 		AF4F68F61F293E5A0047B2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4F68F41F293E5A0047B2CC /* Main.storyboard */; };
 		AF4F68F81F293E5A0047B2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4F68F71F293E5A0047B2CC /* Assets.xcassets */; };
 		AF4F68FB1F293E5A0047B2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4F68F91F293E5A0047B2CC /* LaunchScreen.storyboard */; };
-		AF4F69031F293EA90047B2CC /* GameScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AF4F69021F293EA90047B2CC /* GameScene.scn */; };
-		AF4F69051F293F000047B2CC /* SCNVector3 Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4F69041F293F000047B2CC /* SCNVector3 Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044CA3571F2E082C00A71B8D /* SCNVector3 Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3 Extensions.swift"; sourceTree = "<group>"; };
+		044CA3591F2E083200A71B8D /* GameScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GameScene.scn; sourceTree = "<group>"; };
 		AF4F68EB1F293E5A0047B2CC /* HighRiseAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighRiseAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4F68EE1F293E5A0047B2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4F68F01F293E5A0047B2CC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -26,8 +27,6 @@
 		AF4F68F71F293E5A0047B2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4F68FA1F293E5A0047B2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF4F68FC1F293E5A0047B2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF4F69021F293EA90047B2CC /* GameScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = GameScene.scn; path = ../../../../Desktop/Stuff/TextDemo/TextDemo/HighRise.scnassets/Scenes/GameScene.scn; sourceTree = "<group>"; };
-		AF4F69041F293F000047B2CC /* SCNVector3 Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SCNVector3 Extensions.swift"; path = "../../../../Downloads/High-Rise-Final/High Rise/SCNVector3 Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +59,7 @@
 		AF4F68ED1F293E5A0047B2CC /* HighRiseAR */ = {
 			isa = PBXGroup;
 			children = (
-				AF4F69021F293EA90047B2CC /* GameScene.scn */,
+				044CA3591F2E083200A71B8D /* GameScene.scn */,
 				AF4F68EE1F293E5A0047B2CC /* AppDelegate.swift */,
 				AF4F68F01F293E5A0047B2CC /* art.scnassets */,
 				AF4F68F21F293E5A0047B2CC /* ViewController.swift */,
@@ -68,7 +67,7 @@
 				AF4F68F71F293E5A0047B2CC /* Assets.xcassets */,
 				AF4F68F91F293E5A0047B2CC /* LaunchScreen.storyboard */,
 				AF4F68FC1F293E5A0047B2CC /* Info.plist */,
-				AF4F69041F293F000047B2CC /* SCNVector3 Extensions.swift */,
+				044CA3571F2E082C00A71B8D /* SCNVector3 Extensions.swift */,
 			);
 			path = HighRiseAR;
 			sourceTree = "<group>";
@@ -134,7 +133,6 @@
 				AF4F68F11F293E5A0047B2CC /* art.scnassets in Resources */,
 				AF4F68FB1F293E5A0047B2CC /* LaunchScreen.storyboard in Resources */,
 				AF4F68F81F293E5A0047B2CC /* Assets.xcassets in Resources */,
-				AF4F69031F293EA90047B2CC /* GameScene.scn in Resources */,
 				AF4F68F61F293E5A0047B2CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4F68F31F293E5A0047B2CC /* ViewController.swift in Sources */,
-				AF4F69051F293F000047B2CC /* SCNVector3 Extensions.swift in Sources */,
+				044CA3581F2E082C00A71B8D /* SCNVector3 Extensions.swift in Sources */,
 				AF4F68EF1F293E5A0047B2CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
